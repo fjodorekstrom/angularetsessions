@@ -1,0 +1,52 @@
+<div class="hero-unit">
+  <h1>'Tis the sessions</h1>
+  <p> Click <a ng-click="getData()">here</a> to load sessions</p>
+  <p>belowah: </p>
+  <ul class="unstyled">
+      <li ng-repeat="session in sessions">
+		<div class="well">
+			<dl>
+				<dt>
+				Sprint
+				</dt>
+				<dd>
+				{{session.sprint}}
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+				Focusarea
+				</dt>
+				<dd>
+				{{session.focusarea}}
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+				Feature
+				</dt>
+				<dd>
+				{{session.feature}}
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+				Date
+				</dt>
+				<dd>
+				{{session.date}}
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+				url
+				</dt>
+				<dd>
+				{{session.url}}
+				</dd>
+			</dl>		
+		</div>     
+      	<!--<p ng-repeat="(key,value) in session">{{key}}, {{value}}</p>-->
+      </li>
+  </ul>
+</div>
